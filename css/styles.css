@@ -50,16 +50,6 @@ a:hover {
    padding: 60px 50px;
    overflow: auto;
 }
-.col-wide {
-   width: 70%;
-   float: left;
-   padding-left: 20px;
-   overflow: hidden;
-}
-.col-narrow {
-   width: 30%;
-   float: left;
-}
 .row {
    overflow: auto;
 }
@@ -163,4 +153,28 @@ h3 ~ p {
 }
 p + h3 {
    margin-top: 30px;
+}
+
+/* Meda Queries
+----------------------------- */
+@media (min-width: 900px) {
+   .col-wide {
+      width: 70%;
+      float: left;
+      padding-left: 20px;
+      overflow: hidden;
+   }
+   .col-narrow {
+      width: 30%;
+      float: left;
+   }
+} 
+
+@media (max-width: 899px) {
+   header {
+      text-align: center;
+   }
+   .profile-image {
+      width: 200px;
+   }
 }
